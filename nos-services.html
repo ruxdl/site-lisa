@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nos prestations — La Malle en Coin</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/img/logo.png" alt="La Malle en Coin logo" class="logo">
+        <h1 class="site-title">La Malle en Coin</h1>
+      </div>
+      <nav class="main-nav">
+        <a class="btn-secondary" href="index.html">Retour à l'accueil</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top:120px;">
+    <h2>Nos prestations</h2>
+    <p>Voici un aperçu de nos principales prestations : restauration, entretien, personnalisation et traitements du cuir. Nous intervenons sur malles et bagages de luxe avec un savoir‑faire artisanal et une grande attention aux détails.</p>
+    <p>Pour demander un devis ou plus d'informations, utilisez le lien retour vers l'accueil ou contactez-nous par email : <a href="mailto:contact@la-malle-en-coin.com">contact@la-malle-en-coin.com</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <p>&copy; <span id="year"></span> La Malle en Coin — Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <div class="newsletter-bar" aria-hidden="false">
+    <div class="container newsletter-inner">
+      <p>Inscrivez-vous à la newsletter pour suivre nos restaurations et offres exclusives.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Votre email">
+        <button type="submit">S'inscrire</button>
+      </form>
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </div>
+
+  <script>document.getElementById('year')?.textContent = new Date().getFullYear();</script>
+</body>
+</html>

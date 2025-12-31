@@ -1,0 +1,16 @@
+Files moved/created:
+- pages/_app.js
+- pages/index.js
+- pages/nos-services.js
+- pages/qui-sommes-nous.js
+- pages/nos-valeurs.js
+- components/Header.js
+- components/Footer.js
+- styles/globals.css
+- public/assets/img/* (scissors.svg and placeholder logo)
+
+Next steps:
+- Move remaining CSS rules from assets/css/styles.css into styles/globals.css
+- Replace placeholder logo at public/assets/img/logo/logo.png
+- Test `npm install` then `npm run dev`
+- Consider converting CSS to CSS Modules or Tailwind for better scoping

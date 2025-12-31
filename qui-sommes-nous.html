@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qui sommes-nous ? — La Malle en Coin</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/img/logo.png" alt="La Malle en Coin logo" class="logo">
+        <h1 class="site-title">La Malle en Coin</h1>
+      </div>
+      <nav class="main-nav">
+        <a class="btn-secondary" href="index.html">Retour à l'accueil</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top:120px;">
+    <h2>Qui sommes-nous ?</h2>
+    <p>Fondée par des artisans passionnés, La Malle en Coin se spécialise dans la rénovation et la remise à neuf d'articles de voyage de luxe. Notre approche associe techniques traditionnelles et matériaux de qualité pour restaurer la beauté et la fonctionnalité des pièces historiques.</p>
+    <p>Nous privilégions la transparence, le respect des objets et une relation de confiance avec nos clients.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <p>&copy; <span id="year"></span> La Malle en Coin — Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <div class="newsletter-bar" aria-hidden="false">
+    <div class="container newsletter-inner">
+      <p>Inscrivez-vous à la newsletter pour suivre nos restaurations et offres exclusives.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Votre email">
+        <button type="submit">S'inscrire</button>
+      </form>
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </div>
+
+  <script>document.getElementById('year')?.textContent = new Date().getFullYear();</script>
+</body>
+</html>

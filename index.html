@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Malle en Coin — Restauration et vente de malles de luxe</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/img/logo.png" alt="La Malle en Coin logo" class="logo">
+        <h1 class="site-title">La Malle en Coin</h1>
+      </div>
+
+      <nav class="main-nav">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu"><span class="visually-hidden">Ouvrir le menu</span>
+          <span class="hamburger"><span></span><span></span><span></span></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu" hidden>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#works">Réalisations</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-banner">
+          <h2 class="hero-title">Rénovation de malles et bagages de luxe</h2>
+          <p class="hero-sub">Savoir-faire artisanal — Restauration, personnalisation et entretien pour pièces d'exception</p>
+        </div>
+        <div class="cut-line" aria-hidden="true"><img src="assets/img/scissors.svg" alt="ciseaux" class="cut-svg"></div>
+      </div>
+    </section>
+
+    <section class="hero-panels container">
+      <div class="panels">
+        <div class="panel panel-text">
+          <h4 class="panel-title">Notre savoir‑faire</h4>
+          <p>Spécialistes de la rénovation de malles et bagages de luxe : réparations structurales, restauration des revêtements, traitement des cuirs et finitions sur‑mesure. Chaque pièce est traitée avec discrétion et attention aux détails.</p>
+        </div>
+
+        <div class="panel panel-video">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/YvbjsaVSoQ0" title="La Malle en Coin - vidéo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="container services">
+      <div class="section-divider" aria-hidden="true"></div>
+      <div class="services-grid">
+        <article class="service">
+          <h4 class="service-title">Nos prestations</h4>
+          <p class="service-desc">Explorez l'ensemble de nos prestations et services.</p>
+          <a class="btn-secondary" href="nos-services.html">En savoir plus</a>
+        </article>
+
+        <article class="service">
+          <h4 class="service-title">Qui sommes-nous ?</h4>
+          <p class="service-desc">Découvrez notre histoire et notre philosophie.</p>
+          <a class="btn-secondary" href="qui-sommes-nous.html">En savoir plus</a>
+        </article>
+
+        <article class="service">
+          <h4 class="service-title">Nos valeurs</h4>
+          <p class="service-desc">Apprenez en plus sur nos valeurs.</p>
+          <a class="btn-secondary" href="nos-valeurs.html">En savoir plus</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Remaining homepage sections removed as requested: 'Réalisations', 'À propos' and 'Contact' have been removed to keep the page focused on the three service cards. -->
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <p>&copy; <span id="year"></span> La Malle en Coin — Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <div class="newsletter-bar" aria-hidden="false">
+    <div class="container newsletter-inner">
+      <p>Inscrivez-vous à la newsletter pour suivre nos restaurations et offres exclusives.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Votre email">
+        <button type="submit">S'inscrire</button>
+      </form>
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    toggle.addEventListener('click', ()=>{
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      if(menu.hasAttribute('hidden')) menu.removeAttribute('hidden'); else menu.setAttribute('hidden','');
+    });
+  </script>
+</body>
+</html>
